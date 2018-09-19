@@ -26,5 +26,9 @@ namespace RobotsWindows {
 			base.OnClosed(e);
 			IsClosed = true;
 		}
+
+		private void Window_Closed(object sender, EventArgs e) {
+			WindowsManager.CloseAll();
+		}
 	}
 }

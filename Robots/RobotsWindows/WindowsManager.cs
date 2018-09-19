@@ -4,49 +4,59 @@ using System.Windows;
 
 namespace RobotsWindows {
 	static class WindowsManager {
-		static CinematicWindow cinematicWindow;
+		//static CinematicWindow cinematicWindow;
 		static MenuWindow menuWindow;
-		static CreditsWindow creditsWindow;
-		static AchievementsWindow achievementsWindow;
-		static SettingsWindow settingsWindow;
-		static AllCampaniesWindow allCampaniesWindow;
-		static CampanyWindow campanyWindow;
+		static Lazy<CreditsWindow> creditsWindow;
+		static Lazy<AchievementsWindow> achievementsWindow;
+		static Lazy<SettingsWindow> settingsWindow;
+		static Lazy<AllCampaniesWindow> allCampaniesWindow;
+		static Lazy<CampanyWindow> campanyWindow;
 		static LobbyWindow lobbyWindow;
 		static GameWindow gameWindow;
 
+		//public static CinematicWindow CinematicWindow { get => cinematicWindow; set => cinematicWindow = value; }
+		public static MenuWindow MenuWindow => menuWindow;
+		public static CreditsWindow CreditsWindow => creditsWindow.Value;
+		public static AchievementsWindow AchievementsWindow => achievementsWindow.Value; 
+		public static SettingsWindow SettingsWindow => settingsWindow.Value; 
+		public static AllCampaniesWindow AllCampaniesWindow => allCampaniesWindow.Value;
+		public static CampanyWindow CampanyWindow => campanyWindow.Value;
+		public static LobbyWindow LobbyWindow => lobbyWindow;
+		public static GameWindow GameWindow => gameWindow;
+
 		static WindowsManager() {
-			cinematicWindow = new CinematicWindow();
+			//cinematicWindow = new CinematicWindow();
 			menuWindow = new MenuWindow();
-			creditsWindow = new CreditsWindow();
-			achievementsWindow = new AchievementsWindow();
-			settingsWindow = new SettingsWindow();
-			allCampaniesWindow = new AllCampaniesWindow();
-			campanyWindow = new CampanyWindow();
+			creditsWindow = new Lazy<CreditsWindow>();
+			achievementsWindow = new Lazy<AchievementsWindow>();
+			settingsWindow = new Lazy<SettingsWindow>();
+			allCampaniesWindow = new Lazy<AllCampaniesWindow>();
+			campanyWindow = new Lazy<CampanyWindow>();
 			lobbyWindow = new LobbyWindow();
 			gameWindow = new GameWindow();
 		}
 
 		public static void CloseAll() {
-			if (!cinematicWindow.IsClosed)
-				cinematicWindow.Close();
+			//if (!cinematicWindow.IsClosed)
+			//	cinematicWindow.Close();
 
 			if (!menuWindow.IsClosed)
 				menuWindow.Close();
 
-			if (!creditsWindow.IsClosed)
-				creditsWindow.Close();
+			if (creditsWindow.IsValueCreated && !creditsWindow.Value.IsClosed)
+				creditsWindow.Value.Close();
 
-			if (!achievementsWindow.IsClosed)
-				achievementsWindow.Close();
+			if (achievementsWindow.IsValueCreated && !achievementsWindow.Value.IsClosed)
+				achievementsWindow.Value.Close();
 
-			if (!settingsWindow.IsClosed)
-				settingsWindow.Close();
+			if (settingsWindow.IsValueCreated && !settingsWindow.Value.IsClosed)
+				settingsWindow.Value.Close();
 
-			if (!allCampaniesWindow.IsClosed)
-				allCampaniesWindow.Close();
+			if (allCampaniesWindow.IsValueCreated && !allCampaniesWindow.Value.IsClosed)
+				allCampaniesWindow.Value.Close();
 
-			if (!campanyWindow.IsClosed)
-				campanyWindow.Close();
+			if (campanyWindow.IsValueCreated && !campanyWindow.Value.IsClosed)
+				campanyWindow.Value.Close();
 
 			if (!lobbyWindow.IsClosed)
 				lobbyWindow.Close();
@@ -72,6 +82,8 @@ namespace RobotsWindows {
 			opened.WindowStyle = toOpen.WindowStyle;
 			opened.ResizeMode = toOpen.ResizeMode;
 			toOpen.WindowState = opened.WindowState;
+
+			toOpen.Title = opened.Title;
 
 			toOpen.Left = opened.Left;
 			toOpen.Top = opened.Top;

@@ -21,40 +21,50 @@ namespace RobotsWindows {
 			InitializeComponent();
 		}
 
-		public bool IsClosed { get; private set; }
-		protected override void OnClosed(EventArgs e) {
-			base.OnClosed(e);
-			IsClosed = true;
+		private void Window_Loaded(object sender, RoutedEventArgs e) {
+			ShowIntro();
+
+			WindowsManager.ReopenWindow(this, WindowsManager.MenuWindow);
+			this.Close();
 		}
 
-		private void Window_KeyDown(object sender, KeyEventArgs e) {
-			switch (e.Key) {
-				case Key.W:
-					this.Height -= 10;
-					break;
-				case Key.A:
-					this.Width -= 10;
-					break;
-				case Key.D:
-					this.Width += 10;
-					break;
-				case Key.S:
-					this.Height += 10;
-					break;
-				case Key.L:
-					if(App.Languages[0].EnglishName == App.Language.EnglishName)
-						App.Language = App.Languages[1];
-					else
-						App.Language = App.Languages[0];
+		void ShowIntro() {
 
-					break;
-			}
 		}
 
-		private void Window_SizeChanged(object sender, SizeChangedEventArgs e) {
-			RobotsWindows.Properties.Settings.Default.WindowWidth = (int)e.NewSize.Width;
-			RobotsWindows.Properties.Settings.Default.WindowHeight = (int)e.NewSize.Height;
-			RobotsWindows.Properties.Settings.Default.Save();
-		}
+		//public bool IsClosed { get; private set; }
+		//protected override void OnClosed(EventArgs e) {
+		//	base.OnClosed(e);
+		//	IsClosed = true;
+		//}
+
+		//private void Window_KeyDown(object sender, KeyEventArgs e) {
+		//	switch (e.Key) {
+		//		case Key.W:
+		//			this.Height -= 10;
+		//			break;
+		//		case Key.A:
+		//			this.Width -= 10;
+		//			break;
+		//		case Key.D:
+		//			this.Width += 10;
+		//			break;
+		//		case Key.S:
+		//			this.Height += 10;
+		//			break;
+		//		case Key.L:
+		//			if(App.Languages[0].EnglishName == App.Language.EnglishName)
+		//				App.Language = App.Languages[1];
+		//			else
+		//				App.Language = App.Languages[0];
+		//			break;
+		//	}
+		//}
+
+		//private void Window_SizeChanged(object sender, SizeChangedEventArgs e) {
+		//	RobotsWindows.Properties.Settings.Default.WindowWidth = (int)e.NewSize.Width;
+		//	RobotsWindows.Properties.Settings.Default.WindowHeight = (int)e.NewSize.Height;
+		//	RobotsWindows.Properties.Settings.Default.Save();
+		//}
 	}
 }

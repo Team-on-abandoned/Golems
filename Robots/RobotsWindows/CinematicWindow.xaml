@@ -11,8 +11,7 @@
         Height="{Binding Source={StaticResource Settings}, Path=WindowHeight}"
         Width="{Binding Source={StaticResource Settings}, Path=WindowWidth}"
         
-        KeyDown="Window_KeyDown"
-        SizeChanged="Window_SizeChanged"
+        Loaded="Window_Loaded"
         >
     <Grid>
         

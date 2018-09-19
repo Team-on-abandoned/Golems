@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotsWindows"
         mc:Ignorable="d"
-        Title="CreditsWindow" Height="300" Width="300">
+        Title="CreditsWindow" Height="300" Width="300"
+        Closed="Window_Closed"
+        >
     <Grid>
         
     </Grid>

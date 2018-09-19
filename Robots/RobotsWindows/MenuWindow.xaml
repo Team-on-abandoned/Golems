@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotsWindows"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="300" Width="300">
+        Title="MenuWindow" Height="300" Width="300"
+        Closed="Window_Closed"
+        >
     <Grid>
-        
+        <StackPanel>
+            <Button Content="{DynamicResource mainMenuLobby}"/>
+            <Button Content="{DynamicResource mainMenuCampany}"/>
+            <Button Content="{DynamicResource mainMenuSettings}"/>
+            <Button Content="{DynamicResource mainMenuAchievements}"/>
+            <Button Content="{DynamicResource mainMenuCredits}"/>
+            <Button Content="{DynamicResource mainMenuExit}"/>
+        </StackPanel>
     </Grid>
 </Window>

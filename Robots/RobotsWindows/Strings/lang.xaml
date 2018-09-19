@@ -1,7 +1,13 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:RobotsWindows.Strings"
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     >
     <v:String x:Key="gameTitle">Robots</v:String>
+
+    <v:String x:Key="mainMenuExit">Exit</v:String>
+    <v:String x:Key="mainMenuCredits">Credits</v:String>
+    <v:String x:Key="mainMenuAchievements">Achievements</v:String>
+    <v:String x:Key="mainMenuSettings">Settings</v:String>
+    <v:String x:Key="mainMenuCampany">Campany</v:String>
+    <v:String x:Key="mainMenuLobby">Lobby</v:String>
 </ResourceDictionary>
