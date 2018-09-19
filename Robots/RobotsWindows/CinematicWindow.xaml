@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotsWindows"
         mc:Ignorable="d"
+        
         Title="{DynamicResource gameTitle}"
         ResizeMode="NoResize"
         Height="{Binding Source={StaticResource Settings}, Path=WindowHeight}"
