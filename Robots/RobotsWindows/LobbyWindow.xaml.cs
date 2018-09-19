@@ -30,5 +30,9 @@ namespace RobotsWindows {
 		private void Window_Closed(object sender, EventArgs e) {
 			WindowsManager.CloseAll();
 		}
+
+		private void Back_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.MenuWindow);
+		}
 	}
 }

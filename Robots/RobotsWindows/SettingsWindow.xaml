@@ -11,9 +11,9 @@
         Deactivated="Window_Deactivated"
         >
     <DockPanel LastChildFill="True">
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical">
-            <Button Content="{DynamicResource buttonBack}" Click="Back_Click"/>
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+            <Button DockPanel.Dock="Right" Width="100" Content="{DynamicResource buttonBack}" Click="Back_Click"/>
+        </DockPanel>
 
         <TabControl>
             <TabItem Header="{DynamicResource settingsVideo}">

@@ -8,7 +8,13 @@
 
         Closed="Window_Closed"
         >
-    <Grid>
-        
-    </Grid>
+    <DockPanel LastChildFill="True">
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+            <Button DockPanel.Dock="Right" Width="100" Content="{DynamicResource buttonBack}" Click="Back_Click"/>
+        </DockPanel>
+
+        <Grid>
+
+        </Grid>
+    </DockPanel>
 </Window>
