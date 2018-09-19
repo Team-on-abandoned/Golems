@@ -26,5 +26,34 @@ namespace RobotsWindows {
 			base.OnClosed(e);
 			IsClosed = true;
 		}
+
+		private void Window_KeyDown(object sender, KeyEventArgs e) {
+			switch (e.Key) {
+				case Key.W:
+					//RobotsWindows.Properties.Settings.Default.WindowHeight -= 10;
+					this.Height -= 10;
+					break;
+				case Key.A:
+					RobotsWindows.Properties.Settings.Default.WindowWidth -= 10;
+					//this.Width -= 10;
+					break;
+				case Key.D:
+					RobotsWindows.Properties.Settings.Default.WindowWidth += 10;
+					//this.Width += 10;
+					break;
+				case Key.S:
+					//RobotsWindows.Properties.Settings.Default.WindowHeight += 10;
+					this.Height += 10;
+					break;
+				case Key.L:
+					if(App.Languages[0].EnglishName == App.Language.EnglishName)
+						App.Language = App.Languages[1];
+					else
+						App.Language = App.Languages[0];
+
+					break;
+			}
+			//RobotsWindows.Properties.Settings.Default.Save();
+		}
 	}
 }
