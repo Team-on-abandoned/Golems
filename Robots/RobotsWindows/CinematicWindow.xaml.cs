@@ -30,19 +30,15 @@ namespace RobotsWindows {
 		private void Window_KeyDown(object sender, KeyEventArgs e) {
 			switch (e.Key) {
 				case Key.W:
-					//RobotsWindows.Properties.Settings.Default.WindowHeight -= 10;
 					this.Height -= 10;
 					break;
 				case Key.A:
-					RobotsWindows.Properties.Settings.Default.WindowWidth -= 10;
-					//this.Width -= 10;
+					this.Width -= 10;
 					break;
 				case Key.D:
-					RobotsWindows.Properties.Settings.Default.WindowWidth += 10;
-					//this.Width += 10;
+					this.Width += 10;
 					break;
 				case Key.S:
-					//RobotsWindows.Properties.Settings.Default.WindowHeight += 10;
 					this.Height += 10;
 					break;
 				case Key.L:
@@ -53,7 +49,12 @@ namespace RobotsWindows {
 
 					break;
 			}
-			//RobotsWindows.Properties.Settings.Default.Save();
+		}
+
+		private void Window_SizeChanged(object sender, SizeChangedEventArgs e) {
+			RobotsWindows.Properties.Settings.Default.WindowWidth = (int)e.NewSize.Width;
+			RobotsWindows.Properties.Settings.Default.WindowHeight = (int)e.NewSize.Height;
+			RobotsWindows.Properties.Settings.Default.Save();
 		}
 	}
 }

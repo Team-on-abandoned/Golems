@@ -8,10 +8,11 @@
         mc:Ignorable="d"
         Title="{DynamicResource gameTitle}"
         ResizeMode="NoResize"
-        Height="{Binding Source={StaticResource Settings}, Path=WindowHeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-        Width="{Binding Source={StaticResource Settings}, Path=WindowWidth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+        Height="{Binding Source={StaticResource Settings}, Path=WindowHeight}"
+        Width="{Binding Source={StaticResource Settings}, Path=WindowWidth}"
         
         KeyDown="Window_KeyDown"
+        SizeChanged="Window_SizeChanged"
         >
     <Grid>
         
