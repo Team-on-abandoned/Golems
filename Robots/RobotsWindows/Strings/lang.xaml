@@ -12,4 +12,15 @@
     <v:String x:Key="mainMenuSettings">Settings</v:String>
     <v:String x:Key="mainMenuCampany">Campany</v:String>
     <v:String x:Key="mainMenuLobby">Lobby</v:String>
+
+    <v:String x:Key="settingsVideo">Video</v:String>
+    <v:String x:Key="settingsVideoScreenResolution">Screen resolution</v:String>
+    <v:String x:Key="settingsVideoIsFullscreen">Fullscreen</v:String>
+    
+    <v:String x:Key="settingsAudio">Audio</v:String>
+    
+    <v:String x:Key="settingsInput">Input</v:String>
+    
+    <v:String x:Key="settingsGameplay">Gameplay</v:String>
+
 </ResourceDictionary>

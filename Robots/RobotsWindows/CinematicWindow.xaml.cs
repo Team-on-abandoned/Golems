@@ -24,6 +24,11 @@ namespace RobotsWindows {
 		private void Window_Loaded(object sender, RoutedEventArgs e) {
 			ShowIntro();
 
+			if(Properties.Settings.Default.IsFullscreen)
+				WindowsManager.OpenFullScreen(this);
+			else
+				WindowsManager.OpenNonFullScreen(this);
+
 			WindowsManager.ReopenWindow(this, WindowsManager.MenuWindow);
 			this.Close();
 		}

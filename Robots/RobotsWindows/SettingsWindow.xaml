@@ -5,9 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotsWindows"
         mc:Ignorable="d"
-        Closed="Window_Closed"
-        >
-    <Grid>
 
-    </Grid>
+        Closed="Window_Closed"
+        Activated="Window_Activated"
+        Deactivated="Window_Deactivated"
+        >
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical">
+            <Button Content="{DynamicResource buttonBack}" Click="Back_Click"/>
+        </StackPanel>
+
+        <TabControl>
+            <TabItem Header="{DynamicResource settingsVideo}">
+                <Grid>
+                    <Grid.Resources>
+                        <Style x:Key="centerStyle" TargetType="FrameworkElement">
+                            <Setter Property="Margin" Value="0 0 0 0"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                        </Style>
+                        <Style BasedOn="{StaticResource centerStyle}" TargetType="CheckBox"/>
+                        <Style BasedOn="{StaticResource centerStyle}" TargetType="Label"/>
+                        <Style BasedOn="{StaticResource centerStyle}" TargetType="ComboBox"/>
+
+                    </Grid.Resources>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition MaxHeight="22"/>
+                        <RowDefinition MaxHeight="22"/>
+                        <RowDefinition MaxHeight="22"/>
+                        <RowDefinition MaxHeight="22"/>
+                        <RowDefinition MaxHeight="22"/>
+                        <RowDefinition MaxHeight="22"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" Content="{DynamicResource settingsVideoScreenResolution}"/>
+                    <ComboBox Grid.Row="1" Grid.Column="2" x:Name="resolutinBox" SelectionChanged="resolutinBox_SelectionChanged">
+                        <ComboBoxItem Content="1920x1200"/>
+                        <ComboBoxItem Content="1920x1080"/>
+                        <ComboBoxItem Content="1600x1200"/>
+                        <ComboBoxItem Content="1600x1024"/>
+                        <ComboBoxItem Content="1600x900"/>
+                        <ComboBoxItem Content="1280x1024"/>
+                        <ComboBoxItem Content="1280x768"/>
+                        <ComboBoxItem Content="1280x720"/>
+                        <ComboBoxItem Content="1200x600"/>
+                        <ComboBoxItem Content="1024x768"/>
+                        <ComboBoxItem Content="1024x600"/>
+                        <ComboBoxItem Content="800x600"/>
+                        <ComboBoxItem Content="640x480"/>
+                    </ComboBox>
+
+                    <Label Grid.Row="2" Grid.Column="1" Content="{DynamicResource settingsVideoIsFullscreen}"/>
+                    <CheckBox Grid.Row="2" Grid.Column="2" x:Name="isFullscreen" Checked="isFullscreen_Checked" Unchecked="isFullscreen_Unchecked"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="{DynamicResource settingsAudio}">
+
+            </TabItem>
+            <TabItem Header="{DynamicResource settingsInput}">
+
+            </TabItem>
+            <TabItem Header="{DynamicResource settingsGameplay}">
+
+            </TabItem>
+        </TabControl>
+    </DockPanel>
 </Window>

@@ -78,6 +78,19 @@ namespace RobotsWindows {
 			window.Topmost = true;
 		}
 
+		public static void OpenNonFullScreen(Window window) {
+			window.WindowStyle = WindowStyle.SingleBorderWindow;
+			window.ResizeMode = ResizeMode.NoResize;
+			window.WindowState = WindowState.Normal;
+
+			window.Width = Properties.Settings.Default.WindowWidth;
+			window.Height = Properties.Settings.Default.WindowHeight;
+			window.Left = (SystemParameters.VirtualScreenWidth - window.Width) / 2;
+			window.Top = (SystemParameters.VirtualScreenHeight - window.Height) / 2;
+
+			window.Topmost = false;
+		}
+
 		public static void ReopenWindow(Window opened, Window toOpen) {
 			toOpen.WindowStyle = opened.WindowStyle;
 			toOpen.ResizeMode = opened.ResizeMode;
@@ -90,7 +103,7 @@ namespace RobotsWindows {
 			toOpen.Width = opened.ActualWidth;
 			toOpen.Height = opened.ActualHeight;
 
-			opened.Topmost = opened.Topmost;
+			toOpen.Topmost = opened.Topmost;
 
 			toOpen.Show();
 			opened.Hide();
