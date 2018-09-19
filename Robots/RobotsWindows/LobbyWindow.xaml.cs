@@ -10,13 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace RobotsWindows {
-	public partial class MainWindow : Window {
-		public MainWindow() {
+	/// <summary>
+	/// Interaction logic for LobbyWindow.xaml
+	/// </summary>
+	public partial class LobbyWindow : Window {
+		public LobbyWindow() {
 			InitializeComponent();
+		}
+
+		public bool IsClosed { get; private set; }
+		protected override void OnClosed(EventArgs e) {
+			base.OnClosed(e);
+			IsClosed = true;
 		}
 	}
 }
