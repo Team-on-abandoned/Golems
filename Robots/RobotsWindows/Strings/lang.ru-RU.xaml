@@ -2,5 +2,5 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     >
-    <v:String x:Key="gameTitle">Робот</v:String>
+    <v:String x:Key="gameTitle">Битва големов</v:String>
 </ResourceDictionary>

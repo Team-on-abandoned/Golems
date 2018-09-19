@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     >
-    <v:String x:Key="gameTitle">Robots</v:String>
+    <v:String x:Key="gameTitle">Battle of Golems</v:String>
 
     <v:String x:Key="buttonBack">Back</v:String>
 
@@ -22,5 +22,13 @@
     <v:String x:Key="settingsInput">Input</v:String>
     
     <v:String x:Key="settingsGameplay">Gameplay</v:String>
+
+    <v:String x:Key="creditsCredits">CREDITS</v:String>
+    <v:String x:Key="creditsIdeaTitle">Idea author</v:String>
+    <v:String x:Key="creditsArtistTitle">Artist</v:String>
+    <v:String x:Key="creditsProgrammerTitle">Programmer</v:String>
+    <v:String x:Key="creditsIdea">Alexander Kazantsev, project SIMPLEROBOT (simplerobot.org)</v:String>
+    <v:String x:Key="creditsArtist">Alexander Kazantsev, project SIMPLEROBOT (simplerobot.org)</v:String>
+    <v:String x:Key="creditsProgrammer">Team-on, timonsol13@gmail.com</v:String>
 
 </ResourceDictionary>

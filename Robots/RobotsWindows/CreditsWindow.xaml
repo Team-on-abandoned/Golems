@@ -12,8 +12,18 @@
             <Button DockPanel.Dock="Right" Width="100" Content="{DynamicResource buttonBack}" Click="Back_Click"/>
         </DockPanel>
 
-        <Grid>
-            
-        </Grid>
+        <DockPanel LastChildFill="False">
+            <Label FontSize="20" HorizontalAlignment="Center" DockPanel.Dock="Top" Content="{DynamicResource creditsCredits}"/>
+            <StackPanel DockPanel.Dock="Left">
+                <Label Content="{DynamicResource creditsIdeaTitle}"/>
+                <Label Content="{DynamicResource creditsArtistTitle}"/>
+                <Label Content="{DynamicResource creditsProgrammerTitle}"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Left">
+                <Label Content="{DynamicResource creditsIdea}"/>
+                <Label Content="{DynamicResource creditsArtist}"/>
+                <Label Content="{DynamicResource creditsProgrammer}"/>
+            </StackPanel>
+        </DockPanel>
     </DockPanel>
 </Window>
