@@ -4,6 +4,8 @@
                     >
     <v:String x:Key="gameTitle">Robots</v:String>
 
+    <v:String x:Key="buttonBack">Back</v:String>
+
     <v:String x:Key="mainMenuExit">Exit</v:String>
     <v:String x:Key="mainMenuCredits">Credits</v:String>
     <v:String x:Key="mainMenuAchievements">Achievements</v:String>

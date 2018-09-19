@@ -8,6 +8,6 @@
         Closed="Window_Closed"
         >
     <Grid>
-        
+        <Button Content="{DynamicResource buttonBack}" Click="Back_Click"/>
     </Grid>
 </Window>

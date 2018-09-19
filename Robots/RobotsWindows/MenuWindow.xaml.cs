@@ -30,5 +30,29 @@ namespace RobotsWindows {
 		private void Window_Closed(object sender, EventArgs e) {
 			WindowsManager.CloseAll();
 		}
+
+		private void Lobby_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.LobbyWindow);
+		}
+
+		private void Campany_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.AllCampaniesWindow);
+		}
+
+		private void Settings_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.SettingsWindow);
+		}
+
+		private void Achievements_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.AchievementsWindow);
+		}
+
+		private void Credits_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.CreditsWindow);
+		}
+
+		private void Exit_Click(object sender, RoutedEventArgs e) {
+			WindowsManager.CloseAll();
+		}
 	}
 }

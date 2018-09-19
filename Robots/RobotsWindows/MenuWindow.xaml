@@ -9,12 +9,12 @@
         >
     <Grid>
         <StackPanel>
-            <Button Content="{DynamicResource mainMenuLobby}"/>
-            <Button Content="{DynamicResource mainMenuCampany}"/>
-            <Button Content="{DynamicResource mainMenuSettings}"/>
-            <Button Content="{DynamicResource mainMenuAchievements}"/>
-            <Button Content="{DynamicResource mainMenuCredits}"/>
-            <Button Content="{DynamicResource mainMenuExit}"/>
+            <Button Content="{DynamicResource mainMenuLobby}"        Click="Lobby_Click"/>
+            <Button Content="{DynamicResource mainMenuCampany}"      Click="Campany_Click"/>
+            <Button Content="{DynamicResource mainMenuSettings}"     Click="Settings_Click"/>
+            <Button Content="{DynamicResource mainMenuAchievements}" Click="Achievements_Click"/>
+            <Button Content="{DynamicResource mainMenuCredits}"      Click="Credits_Click"/>
+            <Button Content="{DynamicResource mainMenuExit}"         Click="Exit_Click"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -79,8 +79,8 @@ namespace RobotsWindows {
 		}
 
 		public static void ReopenWindow(Window opened, Window toOpen) {
-			opened.WindowStyle = toOpen.WindowStyle;
-			opened.ResizeMode = toOpen.ResizeMode;
+			toOpen.WindowStyle = opened.WindowStyle;
+			toOpen.ResizeMode = opened.ResizeMode;
 			toOpen.WindowState = opened.WindowState;
 
 			toOpen.Title = opened.Title;
