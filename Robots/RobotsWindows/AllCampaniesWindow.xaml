@@ -7,6 +7,8 @@
         mc:Ignorable="d"
 
         Closed="Window_Closed"
+
+        Title="{DynamicResource gameTitle}"
         >
     <DockPanel LastChildFill="True">
         <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">

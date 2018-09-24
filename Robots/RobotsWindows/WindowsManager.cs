@@ -96,7 +96,7 @@ namespace RobotsWindows {
 			toOpen.ResizeMode = opened.ResizeMode;
 			toOpen.WindowState = opened.WindowState;
 
-			toOpen.Title = opened.Title;
+			//toOpen.Title = opened.Title;
 
 			toOpen.Left = opened.Left;
 			toOpen.Top = opened.Top;

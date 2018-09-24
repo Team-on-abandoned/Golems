@@ -3,4 +3,31 @@
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     >
     <v:String x:Key="gameTitle">Битва големов</v:String>
+
+    <v:String x:Key="buttonBack">Назад</v:String>
+
+    <v:String x:Key="mainMenuExit">Выход</v:String>
+    <v:String x:Key="mainMenuCredits">Разрабочики</v:String>
+    <v:String x:Key="mainMenuAchievements">Достижения</v:String>
+    <v:String x:Key="mainMenuSettings">Настройки</v:String>
+    <v:String x:Key="mainMenuCampany">Кампания</v:String>
+    <v:String x:Key="mainMenuLobby">Лобби</v:String>
+
+    <v:String x:Key="settingsVideo">Графика</v:String>
+    <v:String x:Key="settingsVideoScreenResolution">Расширение екрана</v:String>
+    <v:String x:Key="settingsVideoIsFullscreen">Полный экран</v:String>
+
+    <v:String x:Key="settingsAudio">Аудио</v:String>
+
+    <v:String x:Key="settingsInput">Ввод</v:String>
+
+    <v:String x:Key="settingsGameplay">Игра</v:String>
+
+    <v:String x:Key="creditsCredits">РАЗРАБОТЧИКИ</v:String>
+    <v:String x:Key="creditsIdeaTitle">Автор идеи</v:String>
+    <v:String x:Key="creditsArtistTitle">Художник</v:String>
+    <v:String x:Key="creditsProgrammerTitle">Программист</v:String>
+    <v:String x:Key="creditsIdea">Alexander Kazantsev, project SIMPLEROBOT (simplerobot.org)</v:String>
+    <v:String x:Key="creditsArtist">Alexander Kazantsev, project SIMPLEROBOT (simplerobot.org)</v:String>
+    <v:String x:Key="creditsProgrammer">Team-on, timonsol13@gmail.com</v:String>
 </ResourceDictionary>

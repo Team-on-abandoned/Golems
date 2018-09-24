@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotsWindows"
         mc:Ignorable="d"
+        
+        Title="{DynamicResource gameTitle}"
 
         Closed="Window_Closed"
         Activated="Window_Activated"
@@ -37,12 +39,12 @@
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
-                        <RowDefinition MaxHeight="22"/>
-                        <RowDefinition MaxHeight="22"/>
-                        <RowDefinition MaxHeight="22"/>
-                        <RowDefinition MaxHeight="22"/>
-                        <RowDefinition MaxHeight="22"/>
-                        <RowDefinition MaxHeight="22"/>
+                        <RowDefinition MaxHeight="30"/>
+                        <RowDefinition MaxHeight="30"/>
+                        <RowDefinition MaxHeight="30"/>
+                        <RowDefinition MaxHeight="30"/>
+                        <RowDefinition MaxHeight="30"/>
+                        <RowDefinition MaxHeight="30"/>
                     </Grid.RowDefinitions>
 
                     <Label Grid.Row="1" Grid.Column="1" Content="{DynamicResource settingsVideoScreenResolution}"/>
@@ -67,12 +69,15 @@
 
                 </Grid>
             </TabItem>
+            
             <TabItem Header="{DynamicResource settingsAudio}">
 
             </TabItem>
+            
             <TabItem Header="{DynamicResource settingsInput}">
 
             </TabItem>
+            
             <TabItem Header="{DynamicResource settingsGameplay}">
 
             </TabItem>

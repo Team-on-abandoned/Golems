@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotsWindows"
         mc:Ignorable="d"
+        
         Closed="Window_Closed"
+        
+        Title="{DynamicResource gameTitle}"
         >
-    <Grid>
+    <DockPanel LastChildFill="True">
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+            <Button Width="50" Height="50" Content="Русский" DockPanel.Dock="Right" Click="SetLanguageRu"/>
+            <Button Width="50" Height="50" Content="English" DockPanel.Dock="Right" Click="SetLanguageEng"/>
+        </DockPanel>
+
         <StackPanel>
             <Button Content="{DynamicResource mainMenuLobby}"        Click="Lobby_Click"/>
             <Button Content="{DynamicResource mainMenuCampany}"      Click="Campany_Click"/>
@@ -16,5 +24,5 @@
             <Button Content="{DynamicResource mainMenuCredits}"      Click="Credits_Click"/>
             <Button Content="{DynamicResource mainMenuExit}"         Click="Exit_Click"/>
         </StackPanel>
-    </Grid>
+    </DockPanel>
 </Window>
