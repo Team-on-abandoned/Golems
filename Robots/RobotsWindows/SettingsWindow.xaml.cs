@@ -44,6 +44,7 @@ namespace RobotsWindows {
 			}
 
 			isFullscreen.IsChecked = Properties.Settings.Default.IsFullscreen;
+			resolutinBox.IsEnabled = !Properties.Settings.Default.IsFullscreen;
 		}
 
 		public bool IsClosed { get; private set; }
@@ -72,15 +73,13 @@ namespace RobotsWindows {
 		private void isFullscreen_Checked(object sender, RoutedEventArgs e) {
 			RobotsWindows.Properties.Settings.Default.IsFullscreen = true;
 			WindowsManager.OpenFullScreen(this);
+			resolutinBox.IsEnabled = false;
 		}
 
 		private void isFullscreen_Unchecked(object sender, RoutedEventArgs e) {
 			RobotsWindows.Properties.Settings.Default.IsFullscreen = false;
 			WindowsManager.OpenNonFullScreen(this);
-		}
-
-		private void Window_Deactivated(object sender, EventArgs e) {
-
+			resolutinBox.IsEnabled = true;
 		}
 	}
 }

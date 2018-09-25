@@ -12,6 +12,8 @@
         Height="{Binding Source={StaticResource Settings}, Path=WindowHeight}"
         Width="{Binding Source={StaticResource Settings}, Path=WindowWidth}"
         
+        WindowStartupLocation="CenterScreen"
+        
         Loaded="Window_Loaded"
         >
     <Grid>
