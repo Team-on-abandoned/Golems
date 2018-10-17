@@ -10,7 +10,9 @@ namespace RobotsWindows {
 		static Lazy<AchievementsWindow> achievementsWindow;
 		static Lazy<SettingsWindow> settingsWindow;
 		static Lazy<AllCampaniesWindow> allCampaniesWindow;
-		static Lazy<CampanyWindow> campanyWindow;
+		static Lazy<CampanyWindow> campany1Window;
+		static Lazy<CampanyWindow> campany2Window;
+		static Lazy<CampanyWindow> campany3Window;
 		static LobbyWindow lobbyWindow;
 		static GameWindow gameWindow;
 
@@ -20,7 +22,9 @@ namespace RobotsWindows {
 		public static AchievementsWindow AchievementsWindow => achievementsWindow.Value; 
 		public static SettingsWindow SettingsWindow => settingsWindow.Value; 
 		public static AllCampaniesWindow AllCampaniesWindow => allCampaniesWindow.Value;
-		public static CampanyWindow CampanyWindow => campanyWindow.Value;
+		public static CampanyWindow Campany1Window => campany1Window.Value;
+		public static CampanyWindow Campany2Window => campany2Window.Value;
+		public static CampanyWindow Campany3Window => campany3Window.Value;
 		public static LobbyWindow LobbyWindow => lobbyWindow;
 		public static GameWindow GameWindow => gameWindow;
 
@@ -31,7 +35,9 @@ namespace RobotsWindows {
 			achievementsWindow = new Lazy<AchievementsWindow>();
 			settingsWindow = new Lazy<SettingsWindow>();
 			allCampaniesWindow = new Lazy<AllCampaniesWindow>();
-			campanyWindow = new Lazy<CampanyWindow>();
+			campany1Window = new Lazy<CampanyWindow>();
+			campany2Window = new Lazy<CampanyWindow>();
+			campany3Window = new Lazy<CampanyWindow>();
 			lobbyWindow = new LobbyWindow();
 			gameWindow = new GameWindow();
 		}
@@ -55,8 +61,14 @@ namespace RobotsWindows {
 			if (allCampaniesWindow.IsValueCreated && !allCampaniesWindow.Value.IsClosed)
 				allCampaniesWindow.Value.Close();
 
-			if (campanyWindow.IsValueCreated && !campanyWindow.Value.IsClosed)
-				campanyWindow.Value.Close();
+			if (campany1Window.IsValueCreated && !campany1Window.Value.IsClosed)
+				campany1Window.Value.Close();
+
+			if (campany2Window.IsValueCreated && !campany2Window.Value.IsClosed)
+				campany2Window.Value.Close();
+
+			if (campany3Window.IsValueCreated && !campany3Window.Value.IsClosed)
+				campany3Window.Value.Close();
 
 			if (!lobbyWindow.IsClosed)
 				lobbyWindow.Close();

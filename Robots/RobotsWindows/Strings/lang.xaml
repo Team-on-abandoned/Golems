@@ -13,6 +13,28 @@
     <v:String x:Key="mainMenuCampany">Campany</v:String>
     <v:String x:Key="mainMenuLobby">Lobby</v:String>
 
+    <v:String x:Key="allCampaniesCampany1">Campany 1</v:String>
+    <v:String x:Key="allCampaniesCampany2">Campany 2</v:String>
+    <v:String x:Key="allCampaniesCampany3">Campany 3</v:String>
+
+    <v:String x:Key="Campany1Act1">Act 1</v:String>
+    <v:String x:Key="Campany1Act2">Act 2</v:String>
+    <v:String x:Key="Campany1Act3">Act 3</v:String>
+    <v:String x:Key="Campany1Act4">Act 4</v:String>
+    <v:String x:Key="Campany1Act5">Act 5</v:String>
+
+    <v:String x:Key="Campany2Act1">Act 1</v:String>
+    <v:String x:Key="Campany2Act2">Act 2</v:String>
+    <v:String x:Key="Campany2Act3">Act 3</v:String>
+    <v:String x:Key="Campany2Act4">Act 4</v:String>
+    <v:String x:Key="Campany2Act5">Act 5</v:String>
+
+    <v:String x:Key="Campany3Act1">Act 1</v:String>
+    <v:String x:Key="Campany3Act2">Act 2</v:String>
+    <v:String x:Key="Campany3Act3">Act 3</v:String>
+    <v:String x:Key="Campany3Act4">Act 4</v:String>
+    <v:String x:Key="Campany3Act5">Act 5</v:String>
+
     <v:String x:Key="settingsVideo">Video</v:String>
     <v:String x:Key="settingsVideoScreenResolution">Screen resolution</v:String>
     <v:String x:Key="settingsVideoIsFullscreen">Fullscreen</v:String>

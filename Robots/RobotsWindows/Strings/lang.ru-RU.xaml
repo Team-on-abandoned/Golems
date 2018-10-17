@@ -13,6 +13,28 @@
     <v:String x:Key="mainMenuCampany">Кампания</v:String>
     <v:String x:Key="mainMenuLobby">Лобби</v:String>
 
+    <v:String x:Key="allCampaniesCampany1">Кампания 1</v:String>
+    <v:String x:Key="allCampaniesCampany2">Кампания 2</v:String>
+    <v:String x:Key="allCampaniesCampany3">Кампания 3</v:String>
+
+    <v:String x:Key="Campany1Act1">Глава 1</v:String>
+    <v:String x:Key="Campany1Act2">Глава 2</v:String>
+    <v:String x:Key="Campany1Act3">Глава 3</v:String>
+    <v:String x:Key="Campany1Act4">Глава 4</v:String>
+    <v:String x:Key="Campany1Act5">Глава 5</v:String>
+
+    <v:String x:Key="Campany2Act1">Глава 1</v:String>
+    <v:String x:Key="Campany2Act2">Глава 2</v:String>
+    <v:String x:Key="Campany2Act3">Глава 3</v:String>
+    <v:String x:Key="Campany2Act4">Глава 4</v:String>
+    <v:String x:Key="Campany2Act5">Глава 5</v:String>
+
+    <v:String x:Key="Campany3Act1">Глава 1</v:String>
+    <v:String x:Key="Campany3Act2">Глава 2</v:String>
+    <v:String x:Key="Campany3Act3">Глава 3</v:String>
+    <v:String x:Key="Campany3Act4">Глава 4</v:String>
+    <v:String x:Key="Campany3Act5">Глава 5</v:String>
+
     <v:String x:Key="settingsVideo">Графика</v:String>
     <v:String x:Key="settingsVideoScreenResolution">Расширение екрана</v:String>
     <v:String x:Key="settingsVideoIsFullscreen">Полный экран</v:String>
@@ -27,7 +49,7 @@
     <v:String x:Key="creditsIdeaTitle">Автор идеи</v:String>
     <v:String x:Key="creditsArtistTitle">Художник</v:String>
     <v:String x:Key="creditsProgrammerTitle">Программист</v:String>
-    <v:String x:Key="creditsIdea">Alexander Kazantsev, project SIMPLEROBOT (simplerobot.org)</v:String>
-    <v:String x:Key="creditsArtist">Alexander Kazantsev, project SIMPLEROBOT (simplerobot.org)</v:String>
+    <v:String x:Key="creditsIdea">Alexander Kazantsev, проект ПРОСТОРОБОТ (simplerobot.org)</v:String>
+    <v:String x:Key="creditsArtist">Alexander Kazantsev, проект ПРОСТОРОБОТ (simplerobot.org)</v:String>
     <v:String x:Key="creditsProgrammer">Team-on, timonsol13@gmail.com</v:String>
 </ResourceDictionary>

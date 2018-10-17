@@ -34,5 +34,17 @@ namespace RobotsWindows {
 		private void Back_Click(object sender, RoutedEventArgs e) {
 			WindowsManager.ReopenWindow(this, WindowsManager.MenuWindow);
 		}
+
+		private void Button_OpenCampany1(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.Campany1Window);
+		}
+
+		private void Button_OpenCampany2(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.Campany2Window);
+		}
+
+		private void Button_OpenCampany3(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.Campany3Window);
+		}
 	}
 }

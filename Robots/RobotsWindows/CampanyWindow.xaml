@@ -14,8 +14,10 @@
             <Button DockPanel.Dock="Right" Width="100" Content="{DynamicResource buttonBack}" Click="Back_Click"/>
         </DockPanel>
 
-        <Grid>
-
-        </Grid>
+        <DockPanel LastChildFill="False">
+            <StackPanel Width="200" DockPanel.Dock="Right">
+                <Button Content="{DynamicResource Campany1Act1}"/>
+            </StackPanel>
+        </DockPanel>
     </DockPanel>
 </Window>

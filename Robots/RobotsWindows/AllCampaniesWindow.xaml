@@ -15,8 +15,12 @@
             <Button DockPanel.Dock="Right" Width="100" Content="{DynamicResource buttonBack}" Click="Back_Click"/>
         </DockPanel>
 
-        <Grid>
-
-        </Grid>
+        <DockPanel LastChildFill="False">
+            <StackPanel Width="200" DockPanel.Dock="Right">
+                <Button Content="{DynamicResource allCampaniesCampany1}" Click="Button_OpenCampany1"/>
+                <Button Content="{DynamicResource allCampaniesCampany2}" Click="Button_OpenCampany2"/>
+                <Button Content="{DynamicResource allCampaniesCampany3}" Click="Button_OpenCampany3"/>
+            </StackPanel>
+        </DockPanel>
     </DockPanel>
 </Window>
