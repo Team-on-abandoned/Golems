@@ -2,10 +2,17 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     >
+    <!-- ############################################################################################## -->
+    <!-- ###############           Window                                               ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="gameTitle">Битва големов</v:String>
 
     <v:String x:Key="buttonBack">Назад</v:String>
 
+
+    <!-- ############################################################################################## -->
+    <!-- ###############           Main menu                                            ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="mainMenuExit">Выход</v:String>
     <v:String x:Key="mainMenuCredits">Разрабочики</v:String>
     <v:String x:Key="mainMenuAchievements">Достижения</v:String>
@@ -13,6 +20,27 @@
     <v:String x:Key="mainMenuCampany">Кампания</v:String>
     <v:String x:Key="mainMenuLobby">Лобби</v:String>
 
+    
+    <!-- ############################################################################################## -->
+    <!-- ###############         Lobby                                                  ############### -->
+    <!-- ############################################################################################## -->
+    <v:String x:Key="lobbyPlayerType">Тип игрока</v:String>
+    <v:String x:Key="lobbyNickname">Имя игрока</v:String>
+    <v:String x:Key="lobbyColor">Цвет</v:String>
+    <v:String x:Key="lobbyGolemType">Тип голема</v:String>
+
+    <v:String x:Key="lobbyStartGame">Start Game</v:String>
+
+    <v:String x:Key="lobbySendMessage">Send</v:String>
+
+    <v:String x:Key="lobbySettingsPlayers">Players:</v:String>
+    <v:String x:Key="lobbySettingsMapSizeX">Map size x:</v:String>
+    <v:String x:Key="lobbySettingsMapSizeY">Map size y:</v:String>
+
+
+    <!-- ############################################################################################## -->
+    <!-- ###############            Campany                                             ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="allCampaniesCampany1">Кампания 1</v:String>
     <v:String x:Key="allCampaniesCampany2">Кампания 2</v:String>
     <v:String x:Key="allCampaniesCampany3">Кампания 3</v:String>
@@ -36,6 +64,10 @@
     <v:String x:Key="Campany3Act7">Глава 6</v:String>
     <v:String x:Key="Campany3Act8">Глава 7</v:String>
 
+
+    <!-- ############################################################################################## -->
+    <!-- ###############           Settings                                             ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="settingsVideo">Графика</v:String>
     <v:String x:Key="settingsVideoScreenResolution">Расширение екрана</v:String>
     <v:String x:Key="settingsVideoIsFullscreen">Полный экран</v:String>
@@ -46,6 +78,10 @@
 
     <v:String x:Key="settingsGameplay">Игра</v:String>
 
+
+    <!-- ############################################################################################## -->
+    <!-- ###############            Credits                                             ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="creditsCredits">РАЗРАБОТЧИКИ</v:String>
     <v:String x:Key="creditsIdeaTitle">Автор идеи</v:String>
     <v:String x:Key="creditsArtistTitle">Художник</v:String>

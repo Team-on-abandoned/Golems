@@ -2,10 +2,17 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:v="clr-namespace:System;assembly=mscorlib"
                     >
+    <!-- ############################################################################################## -->
+    <!-- ###############           Window                                               ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="gameTitle">Battle of Golems</v:String>
 
     <v:String x:Key="buttonBack">Back</v:String>
 
+    
+    <!-- ############################################################################################## -->
+    <!-- ###############           Main menu                                            ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="mainMenuExit">Exit</v:String>
     <v:String x:Key="mainMenuCredits">Credits</v:String>
     <v:String x:Key="mainMenuAchievements">Achievements</v:String>
@@ -13,6 +20,27 @@
     <v:String x:Key="mainMenuCampany">Campany</v:String>
     <v:String x:Key="mainMenuLobby">Lobby</v:String>
 
+
+    <!-- ############################################################################################## -->
+    <!-- ###############         Lobby                                                  ############### -->
+    <!-- ############################################################################################## -->
+    <v:String x:Key="lobbyPlayerType">Player type</v:String>
+    <v:String x:Key="lobbyNickname">Nickname</v:String>
+    <v:String x:Key="lobbyColor">Color</v:String>
+    <v:String x:Key="lobbyGolemType">Golem type</v:String>
+
+    <v:String x:Key="lobbyStartGame">Start Game</v:String>
+
+    <v:String x:Key="lobbySendMessage">Send</v:String>
+    
+    <v:String x:Key="lobbySettingsPlayers">Players: </v:String>
+    <v:String x:Key="lobbySettingsMapSizeX">Map size x: </v:String>
+    <v:String x:Key="lobbySettingsMapSizeY">Map size y: </v:String>
+
+
+    <!-- ############################################################################################## -->
+    <!-- ###############            Campany                                             ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="allCampaniesCampany1">Campany 1</v:String>
     <v:String x:Key="allCampaniesCampany2">Campany 2</v:String>
     <v:String x:Key="allCampaniesCampany3">Campany 3</v:String>
@@ -36,6 +64,10 @@
     <v:String x:Key="Campany3Act6">Campany 3 Act 6</v:String>
     <v:String x:Key="Campany3Act7">Campany 3 Act 7</v:String>
 
+    
+    <!-- ############################################################################################## -->
+    <!-- ###############           Settings                                             ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="settingsVideo">Video</v:String>
     <v:String x:Key="settingsVideoScreenResolution">Screen resolution</v:String>
     <v:String x:Key="settingsVideoIsFullscreen">Fullscreen</v:String>
@@ -46,6 +78,10 @@
     
     <v:String x:Key="settingsGameplay">Gameplay</v:String>
 
+    
+    <!-- ############################################################################################## -->
+    <!-- ###############            Credits                                             ############### -->
+    <!-- ############################################################################################## -->
     <v:String x:Key="creditsCredits">CREDITS</v:String>
     <v:String x:Key="creditsIdeaTitle">Idea author</v:String>
     <v:String x:Key="creditsArtistTitle">Artist</v:String>
@@ -55,3 +91,4 @@
     <v:String x:Key="creditsProgrammer">Team-on, timonsol13@gmail.com</v:String>
 
 </ResourceDictionary>
+    

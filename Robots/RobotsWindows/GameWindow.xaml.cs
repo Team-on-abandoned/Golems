@@ -32,7 +32,7 @@ namespace RobotsWindows {
 		}
 
 		private void Back_Click(object sender, RoutedEventArgs e) {
-			WindowsManager.ReopenWindow(this, WindowsManager.MenuWindow);
+			WindowsManager.ReopenWindow(this, WindowsManager.LobbyWindow);
 		}
 	}
 }

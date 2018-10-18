@@ -14,7 +14,175 @@
         </DockPanel>
 
         <Grid>
-            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="0 0 5 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <ScrollViewer Grid.Row="0">
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Style TargetType="Grid">
+                                <Setter Property="Margin" Value="0 5 0 5"/>
+                            </Style>
+                        </StackPanel.Resources>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Text="{DynamicResource lobbyPlayerType}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Column="1" Text="{DynamicResource lobbyNickname}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Column="2" Text="{DynamicResource lobbyColor}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Column="3" Text="{DynamicResource lobbyGolemType}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Rectangle Grid.Column="0" Fill="Black" Width="50" Height="50"/>
+                            <TextBox Grid.Column="1" Text="User nickname"/>
+                            <Rectangle Grid.Column="2" Fill="Orange" Width="50" Height="50"/>
+                            <Rectangle Grid.Column="3" Fill="Black" Width="50" Height="50"/>
+
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Rectangle Grid.Column="0" Fill="Black" Width="50" Height="50"/>
+                            <TextBlock Grid.Column="1" Text="Another user nickname"/>
+                            <Rectangle Grid.Column="2" Fill="Blue" Width="50" Height="50"/>
+                            <Rectangle Grid.Column="3" Fill="Black" Width="50" Height="50"/>
+
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Rectangle Grid.Column="0" Fill="Black" Width="50" Height="50"/>
+                            <TextBlock Grid.Column="1" Text="Another user nickname"/>
+                            <Rectangle Grid.Column="2" Fill="Violet" Width="50" Height="50"/>
+                            <Rectangle Grid.Column="3" Fill="Black" Width="50" Height="50"/>
+
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Rectangle Grid.Column="0" Fill="Black" Width="50" Height="50"/>
+                            <TextBlock Grid.Column="1" Text="Another user nickname"/>
+                            <Rectangle Grid.Column="2" Fill="Purple" Width="50" Height="50"/>
+                            <Rectangle Grid.Column="3" Fill="Black" Width="50" Height="50"/>
+
+                        </Grid>
+
+                    </StackPanel>
+                </ScrollViewer>
+                
+                <ScrollViewer Grid.Row="1">
+                    <StackPanel>
+                        <TextBlock Text="User message message message message message message message message message message message message message message message message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                        <TextBlock Text="User message"/>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <DockPanel Grid.Row="2">
+                    <Button DockPanel.Dock="Right" Content="{DynamicResource lobbySendMessage}" MinWidth="50"/>
+                    <Label DockPanel.Dock="Left" Content="User nickname: "/>
+                    <TextBox Margin="5 0 5 0"/>
+                </DockPanel>
+                
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle Grid.Row="0" Fill="Red"/>
+
+                <ScrollViewer Grid.Row="1">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            
+                            <Label Grid.Row="0" Grid.Column="0" Content="{DynamicResource lobbySettingsPlayers}"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" Text="4"/>
+
+                            <Label Grid.Row="1" Grid.Column="0"  Content="{DynamicResource lobbySettingsMapSizeX}"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" Text="4"/>
+
+                            <Label Grid.Row="2" Grid.Column="0"  Content="{DynamicResource lobbySettingsMapSizeY}"/>
+                            <TextBox Grid.Row="2" Grid.Column="1" Text="4"/>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Button Grid.Row="3" Content="{DynamicResource lobbyStartGame}" Click="Button_StartGame"/>
+
+            </Grid>
+
         </Grid>
     </DockPanel>
 </Window>

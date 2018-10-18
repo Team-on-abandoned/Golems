@@ -34,5 +34,9 @@ namespace RobotsWindows {
 		private void Back_Click(object sender, RoutedEventArgs e) {
 			WindowsManager.ReopenWindow(this, WindowsManager.MenuWindow);
 		}
+
+		private void Button_StartGame(object sender, RoutedEventArgs e) {
+			WindowsManager.ReopenWindow(this, WindowsManager.GameWindow);
+		}
 	}
 }
