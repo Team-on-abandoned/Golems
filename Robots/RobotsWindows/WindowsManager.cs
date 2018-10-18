@@ -2,7 +2,7 @@
 using System.Windows;
 
 
-namespace RobotsWindows {
+namespace GolemsWindows {
 	static class WindowsManager {
 		//static CinematicWindow cinematicWindow;
 		static MenuWindow menuWindow;

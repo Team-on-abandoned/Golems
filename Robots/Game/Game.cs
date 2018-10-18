@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game {
+namespace GolemsGame {
 	public class Game {
 		GameParameters gameParameters;
 

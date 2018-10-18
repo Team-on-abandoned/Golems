@@ -12,17 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace RobotsWindows {
+namespace GolemsWindows {
 	/// <summary>
 	/// Interaction logic for LobbyWindow.xaml
 	/// </summary>
 	public partial class LobbyWindow : Window {
-		Game.GameParameters gameParameter;
+		GolemsGame.GameParameters gameParameter;
 
 		public LobbyWindow() {
 			InitializeComponent();
 
-			gameParameter = new Game.GameParameters();
+			gameParameter = new GolemsGame.GameParameters();
 		}
 
 		public bool IsClosed { get; private set; }

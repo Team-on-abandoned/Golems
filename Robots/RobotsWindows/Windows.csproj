@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7B9A1A98-0BC8-40CA-8F49-7A00706950EB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RobotsWindows</RootNamespace>
-    <AssemblyName>RobotsWindows</AssemblyName>
+    <RootNamespace>GolemsWindows</RootNamespace>
+    <AssemblyName>GolemsWindows</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -172,8 +172,8 @@
     <Resource Include="Resources\icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Robots\Game.csproj">
-      <Project>{a1a606d7-e9ff-4c75-bb40-10bf013b645c}</Project>
+    <ProjectReference Include="..\Game\Game.csproj">
+      <Project>{4085ec26-805d-477a-bb81-c70bb30b9542}</Project>
       <Name>Game</Name>
     </ProjectReference>
   </ItemGroup>

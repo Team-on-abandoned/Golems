@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace RobotsWindows {
+namespace GolemsWindows {
 	/// <summary>
 	/// Interaction logic for App.xaml
 	/// </summary>
@@ -23,7 +23,7 @@ namespace RobotsWindows {
 			languages.Add(new CultureInfo("en-US"));
 			languages.Add(new CultureInfo("ru-RU"));
 
-			Language = RobotsWindows.Properties.Settings.Default.DefaultLanguage;
+			Language = GolemsWindows.Properties.Settings.Default.DefaultLanguage;
 		}
 
 		public static CultureInfo Language {
@@ -63,12 +63,12 @@ namespace RobotsWindows {
 					Application.Current.Resources.MergedDictionaries.Add(dict);
 				}
 
-				RobotsWindows.Properties.Settings.Default.DefaultLanguage = value;
+				GolemsWindows.Properties.Settings.Default.DefaultLanguage = value;
 			}
 		}
 
 		private void OnExit(object sender, ExitEventArgs e) {
-			RobotsWindows.Properties.Settings.Default.Save();
+			GolemsWindows.Properties.Settings.Default.Save();
 		}
 	}
 }
