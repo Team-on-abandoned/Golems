@@ -19,7 +19,6 @@ namespace RobotsWindows {
 
 		public App() {
 			InitializeComponent();
-
 			languages.Clear();
 			languages.Add(new CultureInfo("en-US"));
 			languages.Add(new CultureInfo("ru-RU"));

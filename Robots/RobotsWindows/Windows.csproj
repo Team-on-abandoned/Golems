@@ -172,9 +172,9 @@
     <Resource Include="Resources\icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Robots\Robots.csproj">
+    <ProjectReference Include="..\Robots\Game.csproj">
       <Project>{a1a606d7-e9ff-4c75-bb40-10bf013b645c}</Project>
-      <Name>Robots</Name>
+      <Name>Game</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

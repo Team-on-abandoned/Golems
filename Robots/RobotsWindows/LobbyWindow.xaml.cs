@@ -17,8 +17,12 @@ namespace RobotsWindows {
 	/// Interaction logic for LobbyWindow.xaml
 	/// </summary>
 	public partial class LobbyWindow : Window {
+		Game.GameParameters gameParameter;
+
 		public LobbyWindow() {
 			InitializeComponent();
+
+			gameParameter = new Game.GameParameters();
 		}
 
 		public bool IsClosed { get; private set; }

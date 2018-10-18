@@ -17,6 +17,8 @@
         Loaded="Window_Loaded"
         >
     <Grid>
-        
+        <Viewbox>
+            <Label Content="INTRO!!!"></Label>
+        </Viewbox>
     </Grid>
 </Window>
