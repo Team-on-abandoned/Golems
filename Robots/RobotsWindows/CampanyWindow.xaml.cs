@@ -21,6 +21,33 @@ namespace RobotsWindows {
 			InitializeComponent();
 		}
 
+        public void ChooseCampany(int campanyNumber){
+			stackPanelActs.Children.Clear();
+			switch (campanyNumber) {
+				case 1:
+					for (byte i = 1; i <= 3; ++i) {
+						Button b = new Button() { };
+						b.SetResourceReference(Button.ContentProperty, $"Campany{campanyNumber}Act{i}");
+						stackPanelActs.Children.Add(b);
+					}
+					break;
+				case 2:
+					for (byte i = 1; i <= 6; ++i) {
+						Button b = new Button() { };
+						b.SetResourceReference(Button.ContentProperty, $"Campany{campanyNumber}Act{i}");
+						stackPanelActs.Children.Add(b);
+					}
+					break;
+				case 3:
+					for (byte i = 1; i <= 7; ++i) {
+						Button b = new Button() { };
+						b.SetResourceReference(Button.ContentProperty, $"Campany{campanyNumber}Act{i}");
+						stackPanelActs.Children.Add(b);
+					}
+					break;
+			}
+		}
+
 		public bool IsClosed { get; private set; }
 		protected override void OnClosed(EventArgs e) {
 			base.OnClosed(e);

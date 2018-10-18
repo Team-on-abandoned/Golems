@@ -15,7 +15,7 @@
         </DockPanel>
 
         <DockPanel LastChildFill="False">
-            <StackPanel Width="200" DockPanel.Dock="Right">
+            <StackPanel Width="200" DockPanel.Dock="Right" x:Name="stackPanelActs">
                 <Button Content="{DynamicResource Campany1Act1}"/>
             </StackPanel>
         </DockPanel>

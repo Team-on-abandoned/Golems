@@ -36,15 +36,18 @@ namespace RobotsWindows {
 		}
 
 		private void Button_OpenCampany1(object sender, RoutedEventArgs e) {
-			WindowsManager.ReopenWindow(this, WindowsManager.Campany1Window);
+			WindowsManager.CampanyWindow.ChooseCampany(1);
+			WindowsManager.ReopenWindow(this, WindowsManager.CampanyWindow);
 		}
 
 		private void Button_OpenCampany2(object sender, RoutedEventArgs e) {
-			WindowsManager.ReopenWindow(this, WindowsManager.Campany2Window);
+			WindowsManager.CampanyWindow.ChooseCampany(2);
+			WindowsManager.ReopenWindow(this, WindowsManager.CampanyWindow);
 		}
 
 		private void Button_OpenCampany3(object sender, RoutedEventArgs e) {
-			WindowsManager.ReopenWindow(this, WindowsManager.Campany3Window);
+			WindowsManager.CampanyWindow.ChooseCampany(3);
+			WindowsManager.ReopenWindow(this, WindowsManager.CampanyWindow);
 		}
 	}
 }

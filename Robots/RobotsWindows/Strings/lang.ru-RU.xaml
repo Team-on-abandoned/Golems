@@ -20,20 +20,21 @@
     <v:String x:Key="Campany1Act1">Глава 1</v:String>
     <v:String x:Key="Campany1Act2">Глава 2</v:String>
     <v:String x:Key="Campany1Act3">Глава 3</v:String>
-    <v:String x:Key="Campany1Act4">Глава 4</v:String>
-    <v:String x:Key="Campany1Act5">Глава 5</v:String>
 
     <v:String x:Key="Campany2Act1">Глава 1</v:String>
     <v:String x:Key="Campany2Act2">Глава 2</v:String>
     <v:String x:Key="Campany2Act3">Глава 3</v:String>
     <v:String x:Key="Campany2Act4">Глава 4</v:String>
     <v:String x:Key="Campany2Act5">Глава 5</v:String>
+    <v:String x:Key="Campany2Act6">Глава 6</v:String>
 
     <v:String x:Key="Campany3Act1">Глава 1</v:String>
     <v:String x:Key="Campany3Act2">Глава 2</v:String>
     <v:String x:Key="Campany3Act3">Глава 3</v:String>
     <v:String x:Key="Campany3Act4">Глава 4</v:String>
     <v:String x:Key="Campany3Act5">Глава 5</v:String>
+    <v:String x:Key="Campany3Act7">Глава 6</v:String>
+    <v:String x:Key="Campany3Act8">Глава 7</v:String>
 
     <v:String x:Key="settingsVideo">Графика</v:String>
     <v:String x:Key="settingsVideoScreenResolution">Расширение екрана</v:String>

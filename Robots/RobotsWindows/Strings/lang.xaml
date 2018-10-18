@@ -17,23 +17,24 @@
     <v:String x:Key="allCampaniesCampany2">Campany 2</v:String>
     <v:String x:Key="allCampaniesCampany3">Campany 3</v:String>
 
-    <v:String x:Key="Campany1Act1">Act 1</v:String>
-    <v:String x:Key="Campany1Act2">Act 2</v:String>
-    <v:String x:Key="Campany1Act3">Act 3</v:String>
-    <v:String x:Key="Campany1Act4">Act 4</v:String>
-    <v:String x:Key="Campany1Act5">Act 5</v:String>
+    <v:String x:Key="Campany1Act1">Campany 1 Act 1</v:String>
+    <v:String x:Key="Campany1Act2">Campany 1 Act 2</v:String>
+    <v:String x:Key="Campany1Act3">Campany 1 Act 3</v:String>
 
-    <v:String x:Key="Campany2Act1">Act 1</v:String>
-    <v:String x:Key="Campany2Act2">Act 2</v:String>
-    <v:String x:Key="Campany2Act3">Act 3</v:String>
-    <v:String x:Key="Campany2Act4">Act 4</v:String>
-    <v:String x:Key="Campany2Act5">Act 5</v:String>
+    <v:String x:Key="Campany2Act1">Campany 2 Act 1</v:String>
+    <v:String x:Key="Campany2Act2">Campany 2 Act 2</v:String>
+    <v:String x:Key="Campany2Act3">Campany 2 Act 3</v:String>
+    <v:String x:Key="Campany2Act4">Campany 2 Act 4</v:String>
+    <v:String x:Key="Campany2Act5">Campany 2 Act 5</v:String>
+    <v:String x:Key="Campany2Act6">Campany 2 Act 6</v:String>
 
-    <v:String x:Key="Campany3Act1">Act 1</v:String>
-    <v:String x:Key="Campany3Act2">Act 2</v:String>
-    <v:String x:Key="Campany3Act3">Act 3</v:String>
-    <v:String x:Key="Campany3Act4">Act 4</v:String>
-    <v:String x:Key="Campany3Act5">Act 5</v:String>
+    <v:String x:Key="Campany3Act1">Campany 3 Act 1</v:String>
+    <v:String x:Key="Campany3Act2">Campany 3 Act 2</v:String>
+    <v:String x:Key="Campany3Act3">Campany 3 Act 3</v:String>
+    <v:String x:Key="Campany3Act4">Campany 3 Act 4</v:String>
+    <v:String x:Key="Campany3Act5">Campany 3 Act 5</v:String>
+    <v:String x:Key="Campany3Act6">Campany 3 Act 6</v:String>
+    <v:String x:Key="Campany3Act7">Campany 3 Act 7</v:String>
 
     <v:String x:Key="settingsVideo">Video</v:String>
     <v:String x:Key="settingsVideoScreenResolution">Screen resolution</v:String>
