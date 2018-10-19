@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows", "RobotsWindows\Windows.csproj", "{7B9A1A98-0BC8-40CA-8F49-7A00706950EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows", "Golems\Windows.csproj", "{7B9A1A98-0BC8-40CA-8F49-7A00706950EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{4085EC26-805D-477A-BB81-C70BB30B9542}"
 EndProject
