@@ -1,2 +1,4 @@
 # Robots
-Конкурс: Шаг за Шагом + Конкурс интерфейсов меню 2. Пошаговая игра про големов и программирование
+ Unfinished game based on board game `Battle of Golems`.
+ 
+ Idea, but not suggestion for [UI contest 2](https://gamedev.ru/projects/forum/?id=238851) and [Contest: Step by step](https://gamedev.ru/projects/forum/?id=238852)
